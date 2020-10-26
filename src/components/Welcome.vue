@@ -4,16 +4,15 @@
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>欢迎</el-breadcrumb-item>
     </el-breadcrumb>
-    <el-row :gutter="15">
-      <!-- 左边部分 -->
-      <el-col :span="13">
+
+
         <!-- 用户信息表格 -->
         <el-card class="box-card">
           <div slot="header" class="clearfix">
             <span>用户信息</span>
             <el-button style="float: right;" size="mini" plain loading type="primary">用户中心</el-button>
             <el-button
-              @click="getPage('https://github.com/zykzhangyukang/Xinguan')"
+              @click="getPage('https://github.com/AnthonyandNancy/XinGuanMaterialSystem')"
               type="primary"
               plain
               style="float: right;margin-right: 10px;"
@@ -100,39 +99,9 @@
           <!-- 用户登入报表 -->
           <div id="loginReport" style="width: 650px;height:270px;"></div>
         </el-card>
-      </el-col>
-      <!-- 右边部分 -->
-      <el-col :span="11">
-        <div class="grid-content bg-purple">
-          <el-card style="min-height:650px;">
-            <el-carousel height="180px">
-              <el-carousel-item v-for="item in 3" :key="item"></el-carousel-item>
-            </el-carousel>
-            <aplayer
-              style="margin-top:20px;margin-bottom:30px;"
-              autoplay
-              :music="{
-                  title: '给我一个理由忘记',
-                  artist: 'A-Lin',
-                  src: 'http://music.163.com/song/media/outer/url?id=25640799.mp3',
-                  pic: 'http://p2.music.126.net/0POVOSSjqgVoOUGc5haWBQ==/109951163392311918.jpg'
-              }"
-              :list="musicList"
-            ></aplayer>
-       <el-divider>其他项目</el-divider>
-            <el-row :gutter="20">
-              <el-col :span="6"><div class="grid-content bg-purple"><el-button @click="getPage('http://116.85.25.106:8989/system/loginPage.do')">通用管理系统</el-button></div></el-col>
-              <el-col :span="6"><div class="grid-content bg-purple"><el-button @click="getPage('http://www.zykcoderman.xyz/')">社区项目</el-button></div></el-col>
-              <el-col :span="6"><div class="grid-content bg-purple"><el-button @click="getPage('http://116.85.25.106')">商城项目</el-button></div></el-col>
-              <el-col :span="6"><div class="grid-content bg-purple"><el-button @click="getPage('https://github.com/zykzhangyukang')">Githhub</el-button></div></el-col>
-            </el-row>
-             <el-divider></el-divider>
 
-          </el-card>
-          <!-- <el-calendar :v-model="new Date()"></el-calendar> -->
-        </div>
-      </el-col>
-    </el-row>
+
+
 
     <!-- <el-card class="box-card">
            <el-calendar v-model="value"></el-calendar>

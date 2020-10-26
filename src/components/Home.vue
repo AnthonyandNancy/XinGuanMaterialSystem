@@ -24,11 +24,6 @@
           </el-dropdown-item>
 
 
-          <el-dropdown-item>
-
-            <span type="danger" @click="getContact"><span class="el-icon-ship"></span> &nbsp;交流讨论</span>
-
-          </el-dropdown-item>
 
           <el-dropdown-item>
 
