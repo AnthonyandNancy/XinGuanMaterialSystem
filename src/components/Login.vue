@@ -56,28 +56,7 @@
       :canvasHeight="350"
     />
 
-    <el-dialog title="提示" :visible.sync="dialogVisible" width="45%">
-      <span>
-        《新冠-物资管理系统》 该项目后端采用SpringBoot，Shiro，通用Mapper开发API接口，
-        前端使用当今较为流行的Vue.js。
-      </span>
-      <el-table border :data="tableData" style="width: 100%">
-        <el-table-column prop="date" label="账号" width="180"></el-table-column>
-        <el-table-column prop="name" label="密码" width="180"></el-table-column>
-        <el-table-column prop="address" label="描述"></el-table-column>
-      </el-table>
-      <br />一个可供初学者接触的前后端分离项目
-      后端项目：
-      <el-link href="https://github.com/zykzhangyukang/Xinguan" type="primary">厂库链接地址</el-link>&nbsp;&nbsp;&nbsp;
-      前端项目：
-      <el-link href="https://github.com/zykzhangyukang/Vue-Xinguan" type="primary">厂库链接地址</el-link>
 
-      <p>项目不定期更新：因为我比较懒~，觉得不错的话，还望各位大佬给个Star哟~。</p>
-      <span slot="footer" class="dialog-footer">
-        <el-button @click="dialogVisible = false">点个赞</el-button>
-        <el-button type="primary" @click="dialogVisible = false">去登入</el-button>
-      </span>
-    </el-dialog>
   </div>
 </template>
 
